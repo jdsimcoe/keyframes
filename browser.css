@@ -1,0 +1,9 @@
+/* bind the toolbar as the window's draggable region */
+.navbar {
+  -webkit-app-region: drag;
+}
+
+.nav-logo,
+.nav-menu {
+  margin-top: 6px;
+}

@@ -1,0 +1,9 @@
+# macOS stuff
+.DS_Store
+Icon?
+
+# Node stuff
+node_modules/
+
+# Build stuff
+dist/
