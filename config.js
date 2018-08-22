@@ -6,8 +6,8 @@ module.exports = new Config({
     dockBadge: false,
 		zoomFactor: 1,
 		lastWindowState: {
-			width: 1042,
-			height: 768
+			width: 1064,
+			height: 800
 		},
 		alwaysOnTop: false
 	}
