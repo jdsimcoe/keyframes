@@ -1,7 +1,7 @@
 {
   "name": "keyframes",
   "productName": "Keyframes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A macOS electron wrapper for https://keyframes.net/.",
   "license": "MIT",
   "repository": "jdsimcoe/keyframes",
