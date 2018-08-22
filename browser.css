@@ -3,7 +3,23 @@
   -webkit-app-region: drag;
 }
 
-.nav-logo,
 .nav-menu {
   margin-top: 6px;
+}
+
+.nav-logo {
+  margin-top: 14px;
+  margin-left: -10px;
+  width: 55px;
+}
+
+@media (min-width: 680px) {
+  .nav-logo{
+    width: 55px !important;
+    overflow: hidden !important;
+  }
+}
+
+.posts-filters ul {
+  padding-left: 20px;
 }
