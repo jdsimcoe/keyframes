@@ -7,6 +7,10 @@
   margin-top: 6px;
 }
 
+.nav-menu > ul > li:first-child {
+  display: none;
+}
+
 .nav-logo {
   margin-top: 14px;
   margin-left: -10px;
