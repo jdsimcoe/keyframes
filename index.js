@@ -29,10 +29,11 @@ if (isAlreadyRunning) {
 }
 
 function updateBadge(title) {
-	// ignore `Sindre messaged you` blinking
-	if (title.indexOf('Keyframes') === -1) {
-		return;
-	}
+
+  mainWindow.webContents.executeJavaScript(`
+    var count = document.getElementsByClassName('unread')["0"].dataset.unreadCount;
+    document.title = "Keyframes (" + count + ")";
+  `);
 
 	let messageCount = (/\(([0-9]+)\)/).exec(title);
 	messageCount = messageCount ? Number(messageCount[1]) : 0;
