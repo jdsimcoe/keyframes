@@ -3,8 +3,33 @@
   -webkit-app-region: drag;
 }
 
+@keyframes fadeIn {
+	0% { opacity: 0 }
+	100% { opacity: 1 }
+}
+
+.nav-currency {
+  -moz-transition: -moz-transform 1s,
+  transition: transform 1s,
+  -o-transition: -o-transform 1s,
+  -webkit-transition: -webkit-transform 1s;
+}
+
+.nav-currency:hover {
+  animation: fadeIn 200ms linear;
+  animation-iteration-count: 1
+}
+
 .nav-menu {
-  margin-top: 6px;
+  animation-name: nav-menu;
+  opacity: 0;
+  position: absolute;
+  top: 3px;
+  right: 12px;
+}
+
+.navbar:hover .nav-menu {
+  animation: fadeIn 200ms ease-in-out both 1;
 }
 
 .nav-menu > ul > li:first-child {
@@ -12,6 +37,10 @@
 }
 
 .nav-logo {
+  margin: 0 auto;
+}
+
+/* .nav-logo {
   margin-top: 14px;
   margin-left: -10px;
   width: 55px;
@@ -22,7 +51,7 @@
     width: 55px !important;
     overflow: hidden !important;
   }
-}
+} */
 
 .posts-filters ul {
   padding-left: 20px;

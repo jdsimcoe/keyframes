@@ -5,11 +5,9 @@ const config = require('./config');
 const ipc = electron.ipcRenderer;
 
 function setDockBadge() {
-  // document.body.classList.toggle('dock-badge', config.get('dockBadge'));
-  // var recurring = $('body.dock-badge .present .recurring-todo-item-list li:not(.is-done)').length;
-  // var normal = $('body.dock-badge .present .todo-item-list li:not(.is-done)').length;
-  // var total = recurring + normal;
-  // document.title = "TeuxDeux (" + total + ")";
+  document.body.classList.toggle('dock-badge', config.get('dockBadge'));
+  var count = document.getElementsByClassName('unread')["0"].dataset.unreadCount;
+  document.title = "Keyframes (" + count + ")";
 }
 
 ipc.on('toggle-dock-badge', () => {
